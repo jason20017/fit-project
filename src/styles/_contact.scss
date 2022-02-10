@@ -1,0 +1,132 @@
+.contact {
+  min-height: 100%;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  .contact_pic {
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 80vh;
+      margin-top: -5rem;
+    }
+    span {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: rgb(0, 0, 0);
+      top: 40%;
+      left: 40%;
+      font-size: 5rem;
+      z-index: 0;
+    }
+    .contact_subtitle {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: rgb(0, 0, 0);
+      top: 55%;
+      left: 40%;
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+  }
+  .contact_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    .contact_form_left {
+      min-width: 30%;
+      .contact_information {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        .contact_title {
+          display: flex;
+          h3 {
+            margin-left: 1.2rem;
+          }
+        }
+        .contact_subtitle {
+          font-size: 1.5rem;
+          padding-left: 3.4rem;
+        }
+      }
+    }
+    .contact_form_right {
+      min-width: 30%;
+      .mb-3 {
+        width: 100%;
+      }
+      button {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 990.5px) {
+  .contact {
+    margin-top: 5rem;
+    .contact_pic {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      min-height: 15rem;
+      overflow: hidden;
+      img {
+        padding-top: 4rem;
+      }
+      span {
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        font-size: 2rem;
+      }
+      .contact_subtitle {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgb(0, 0, 0);
+        top: 40%;
+        left: 30%;
+        font-size: 1.1rem;
+        margin-top: 2rem;
+      }
+    }
+    .contact_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 2rem;
+      .contact_form_left {
+        min-width: 30%;
+        padding-left: 5%;
+        .contact_information {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 2rem;
+          .contact_title {
+            display: flex;
+            h3 {
+              margin-left: 1.2rem;
+            }
+          }
+          .contact_subtitle {
+            font-size: 1.2rem;
+            padding-left: 1rem;
+          }
+        }
+      }
+      .contact_form_right {
+        min-width: 30%;
+        padding: 0 5%;
+        .mb-3 {
+          width: 100%;
+        }
+        button {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

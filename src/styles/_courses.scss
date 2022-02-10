@@ -1,0 +1,72 @@
+.courses {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  .card {
+    width: 25rem;
+    min-height: 30rem;
+    margin: 1rem 5rem;
+    .card-img-top {
+      min-height: 20rem;
+    }
+    .card-body {
+      h5 {
+        font-weight: bold;
+        font-size: 1.8rem;
+      }
+      .card-text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.modal-dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  .modal-content {
+    width: 50rem;
+    height: 40rem;
+    .modal-body {
+      position: relative;
+      .modal-video {
+        position: absolute;
+        width: 100%;
+        left: 0%;
+      }
+      p {
+        position: absolute;
+        bottom: 2%;
+      }
+    }
+  }
+}
+
+@media (max-width: 990.5px) {
+  .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .modal-dialog {
+      .modal-content {
+        width: 27rem;
+        height: 30rem;
+        .modal-body {
+          position: relative;
+          .modal-video {
+            position: absolute;
+            width: 100%;
+          }
+          p {
+            position: absolute;
+            bottom: 2%;
+          }
+        }
+      }
+    }
+  }
+}
