@@ -7,7 +7,6 @@ const QA = () => {
         <img src={Qapic} alt="" />
         <h1>您的問題 vs 專家回答</h1>
       </div>
-
       <div className="qa_container container ">
         <div className="qa_parts col-md-6">
           <div className="qa_question">
